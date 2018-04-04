@@ -4,13 +4,15 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
+import { CoffeeComponent } from './coffee/coffee.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    AboutComponent
+    AboutComponent,
+    CoffeeComponent
   ],
   imports: [
     BrowserModule,

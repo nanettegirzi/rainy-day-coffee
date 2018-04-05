@@ -6,6 +6,7 @@ import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { CoffeeComponent } from './coffee/coffee.component';
 import { ContactComponent } from './contact/contact.component';
+import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ContactComponent } from './contact/contact.component';
     WelcomeComponent,
     AboutComponent,
     CoffeeComponent,
-    ContactComponent
+    ContactComponent,
+    CoffeeDetailComponent
   ],
   imports: [
     BrowserModule,

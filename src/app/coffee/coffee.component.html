@@ -1,8 +1,13 @@
 <div class="container">
-
-<h1 id="coffee-text">Coffee</h1>
-<hr>
-  <p>
-    Coffee List will go here
-  </p>
+  <div class="row" id="coffee-text">
+    <div class="col-md-4">
+      <div *ngFor="let coffee of coffees" (click)="goToDetailPage(coffee)" class="card" style="width: 222px;">
+        <img class="card-img-top" src="./assets/img/coffeebag.png" alt="coffee bag image">
+        <div class=" card-body">
+          <h3>{{coffee.name}}</h3>
+          <p>From <b>${{coffee.price}}</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

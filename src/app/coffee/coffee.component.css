@@ -11,3 +11,7 @@
   border: none;
   text-align: left;
 }
+
+.card:hover {
+  cursor: pointer;
+}

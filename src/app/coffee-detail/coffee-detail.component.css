@@ -1,0 +1,16 @@
+#detail-text {
+  margin-top: 75px;
+}
+
+.breadcrumb-item {
+  color: lightgrey;
+}
+
+.breadcrumb {
+  background-color: whitesmoke;
+}
+
+#black {
+  background-color: black;
+  height: 1px;
+}

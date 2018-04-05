@@ -1,3 +1,31 @@
-<p>
-  coffee-detail works!
-</p>
+<div class="container ">
+
+
+
+  <div class="row">
+    <div class="col-md-6">
+    </div>
+
+    <div class="col-md-6">
+      <nav class="breadcrumb" id="detail-text">
+        <a class="breadcrumb-item" routerLink="">Home</a>
+        <a class="breadcrumb-item" routerLink="coffee">Coffee</a>
+      </nav>
+      <h1>{{coffeeToDisplay.name}}</h1>
+      <hr id="black"align="left" width="10%">
+      <h3>From: ${{coffeeToDisplay.price.toFixed(2)}}</h3>
+      <br>
+      <h3>{{coffeeToDisplay.region}}</h3>
+      <p><b>Producer</b> {{coffeeToDisplay.producer}}</p>
+      <p><b>Cultivar</b> {{coffeeToDisplay.cultivar}}</p>
+      <p><b>Processing</b> {{coffeeToDisplay.processing}}</p>
+      <p><b>Elevation</b> {{coffeeToDisplay.elevation}}</p>
+      <br>
+      <p><b>UPTON TASTING:</b></p>
+      <p>{{coffeeToDisplay.taste}}</p>
+      <hr>
+      <p>{{coffeeToDisplay.description}}</p>
+
+    </div>
+  </div>
+</div>

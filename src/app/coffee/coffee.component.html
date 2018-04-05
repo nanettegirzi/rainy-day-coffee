@@ -1,11 +1,13 @@
 <div class="container">
   <div class="row" id="coffee-text">
-    <div class="col-md-4">
-      <div *ngFor="let coffee of coffees" (click)="goToDetailPage(coffee)" class="card" style="width: 222px;">
-        <img class="card-img-top" src="./assets/img/coffeebag.png" alt="coffee bag image">
-        <div class=" card-body">
-          <h3>{{coffee.name}}</h3>
-          <p>From <b>${{coffee.price}}</b></p>
+    <div *ngFor="let coffee of coffees">
+      <div class="col-md-3">
+        <div (click)="goToDetailPage(coffee)" class="card" style="width: 250px; background-color: whitesmoke">
+          <img class="card-img-top" src="./assets/img/coffeebag.png" alt="coffee bag image">
+          <div class=" card-body">
+            <h5>{{coffee.name}}</h5>
+            <p>From <b>${{coffee.price}}</b></p>
+          </div>
         </div>
       </div>
     </div>

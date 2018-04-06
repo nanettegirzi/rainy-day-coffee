@@ -7,9 +7,19 @@
           <div class=" card-body">
             <h5>{{coffee.name}}</h5>
             <p>From <b>${{coffee.price}}</b></p>
+            <div *ngIf="currentRoute === '/admin'">
+            <p><b>Region:</b> {{coffee.region}}
+            <p><b>Producer:</b> {{coffee.producer}}</p>
+            <p><b>Cultivar:</b> {{coffee.cultivar}}</p>
+            <p><b>Processing:</b> {{coffee.processing}}</p>
+            <p><b>Elevation:</b> {{coffee.elevation}}</p>
+            <p><b>Tast:</b> {{coffee.taste}}</p>
+            <p><b>Description:</b> {{coffee.description}}</p>
+            <app-edit-coffee></app-edit-coffee>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>

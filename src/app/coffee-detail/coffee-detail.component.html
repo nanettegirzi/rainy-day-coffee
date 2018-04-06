@@ -1,9 +1,7 @@
 <div class="container ">
-
-
-
   <div class="row">
     <div class="col-md-6">
+     <img src="./assets/img/coffeebag.png" alt="coffee bag image">
     </div>
 
     <div class="col-md-6">
@@ -21,9 +19,10 @@
       <p><b>Processing</b> {{(coffeeToDisplay | async)?.processing}}</p>
       <p><b>Elevation</b> {{(coffeeToDisplay | async)?.elevation}}</p>
       <br>
-      <p><b>UPTON TASTING:</b></p>
+      <p><b>UPON TASTING:</b></p>
       <p>{{(coffeeToDisplay | async)?.taste}}</p>
       <hr>
+      <p><b>Description:</b></p>
       <p>{{(coffeeToDisplay | async)?.description}}</p>
 
     </div>

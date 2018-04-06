@@ -11,6 +11,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
+import { EditCoffeeComponent } from './edit-coffee/edit-coffee.component';
 
 
 export const firebaseConfig = {
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     CoffeeComponent,
     ContactComponent,
     CoffeeDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditCoffeeComponent
   ],
   imports: [
     BrowserModule,

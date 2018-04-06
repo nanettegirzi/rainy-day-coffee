@@ -24,7 +24,7 @@ export class CoffeeDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.coffeeId = parseInt(urlParameters['id']);
     });
-    this.coffeeToDisplay = this.coffeeService.getCoffeeById(this.coffeeId);
+    // this.coffeeToDisplay = this.coffeeService.getCoffeeById(this.coffeeId);
   }
 
 }

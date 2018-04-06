@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Coffee } from './coffee.model';
-import { COFFEES } from './mock-coffees';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -15,11 +14,15 @@ export class CoffeeService {
     return this.coffees;
   }
 
+  addCoffee(newCoffee: Coffee) {
+    this.coffees.push(newCoffee);
+  }
+
   getCoffeeById(coffeeId: number) {
-    for (var i = 0; i <= COFFEES.length -1; i++) {
-      if (COFFEES[i].id === coffeeId) {
-        return COFFEES[i];
-      }
-    }
+    // for (var i = 0; i <= COFFEES.length -1; i++) {
+    //   if (COFFEES[i].id === coffeeId) {
+    //     return COFFEES[i];
+    //   }
+    // }
   }
 }

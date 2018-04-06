@@ -8,5 +8,5 @@ export class Coffee {
                 public elevation: string,
                 public taste: string,
                 public description: string,
-                public id: number) {}
+            ) {}
 }

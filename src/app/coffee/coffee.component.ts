@@ -20,6 +20,6 @@ ngOnInit() {
 }
 
   goToDetailPage(clickedCoffee: Coffee) {
-    this.router.navigate(['coffees', clickedCoffee.id]);
+    // this.router.navigate(['coffees', clickedCoffee.id]);
   };
 }

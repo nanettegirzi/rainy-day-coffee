@@ -19,7 +19,7 @@ ngOnInit() {
   this.coffees = this.coffeeService.getCoffees();
 }
 
-  goToDetailPage(clickedCoffee: Coffee) {
-    // this.router.navigate(['coffees', clickedCoffee.id]);
+  goToDetailPage(clickedCoffee) {
+    this.router.navigate(['coffees', clickedCoffee.$key]);
   };
 }

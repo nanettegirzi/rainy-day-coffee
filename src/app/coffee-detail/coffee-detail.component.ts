@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Coffee } from '../coffee.model';
 import { CoffeeService } from '../coffee.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -12,8 +13,8 @@ import { CoffeeService } from '../coffee.service';
   providers: [CoffeeService]
 })
 export class CoffeeDetailComponent implements OnInit {
-  coffeeId: number;
-  coffeeToDisplay: Coffee;
+  coffeeId: string;
+  coffeeToDisplay;
 
   constructor(private route: ActivatedRoute,
               private location: Location,
@@ -22,9 +23,9 @@ export class CoffeeDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.coffeeId = parseInt(urlParameters['id']);
+      this.coffeeId = (urlParameters['id']);
     });
-    // this.coffeeToDisplay = this.coffeeService.getCoffeeById(this.coffeeId);
+    this.coffeeToDisplay = this.coffeeService.getCoffeeById(this.coffeeId);
   }
 
 }

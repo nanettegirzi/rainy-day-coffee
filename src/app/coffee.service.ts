@@ -18,11 +18,7 @@ export class CoffeeService {
     this.coffees.push(newCoffee);
   }
 
-  getCoffeeById(coffeeId: number) {
-    // for (var i = 0; i <= COFFEES.length -1; i++) {
-    //   if (COFFEES[i].id === coffeeId) {
-    //     return COFFEES[i];
-    //   }
-    // }
+  getCoffeeById(coffeeId: string) {
+    return this.database.object('coffees/' + coffeeId);
   }
 }

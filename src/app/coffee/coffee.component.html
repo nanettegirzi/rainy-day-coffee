@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row" id="coffee-text">
-    <div *ngFor="let coffee of coffees">
+    <div *ngFor="let coffee of coffees | async">
       <div class="col-md-3">
         <div (click)="goToDetailPage(coffee)" class="card" style="width: 250px; background-color: whitesmoke">
           <img class="card-img-top" src="./assets/img/coffeebag.png" alt="coffee bag image">
           <div class=" card-body">
             <h5>{{coffee.name}}</h5>
-            <p>From <b>${{coffee.price.toFixed(2)}}</b></p>
+            <p>From <b>${{coffee.price}}</b></p>
           </div>
         </div>
       </div>

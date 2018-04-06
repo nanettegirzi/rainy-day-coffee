@@ -1,0 +1,13 @@
+{ "coffees": [{
+    "name": "Nightcap",
+    "price": "13.50",
+    "region": "SIDAMA, ETHIOPIA",
+    "producer": "Many small farms",
+    "cultivar": "Heirloom",
+    "processing": "Natural",
+    "elevation": "1500 - 2000 masl",
+    "taste": "Milk chocolate, apple, jasmine",
+    "description": "This natural process coffee was sourced from smallholder farmers in Ethiopia’s Sidama region. The green coffee was shipped, after preselection from Ethiopia to Veracruz, Mexico, the location of Descamex and their chemical-free decaffeination method called Mountain Water Process. The technique involves hydrating the coffee beans, preloading the water with green coffee extract – basically everything that makes coffee coffee except for caffeine. The saturated coffee-solids water extracts just the caffeine, is drained and filtered, and then the process is repeated until the coffee is at least 97% free of the alkaloid.",
+    "id": "1"
+  }]
+}

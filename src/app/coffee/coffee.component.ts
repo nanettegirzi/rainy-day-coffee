@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Coffee } from '../coffee.model';
 import { Router } from '@angular/router';
 import { CoffeeService } from '../coffee.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-coffee',
@@ -10,7 +11,7 @@ import { CoffeeService } from '../coffee.service';
   providers: [CoffeeService]
 })
 export class CoffeeComponent implements OnInit {
-  coffees: Coffee[];
+  coffees: FirebaseListObservable<any[]>;
 
 constructor(private router: Router, private coffeeService: CoffeeService) {}
 

@@ -7,6 +7,17 @@ import { AboutComponent } from './about/about.component';
 import { CoffeeComponent } from './coffee/coffee.component';
 import { ContactComponent } from './contact/contact.component';
 import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 
 @NgModule({
@@ -22,7 +33,10 @@ import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
     BrowserModule,
     // FormsModule,
     // HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

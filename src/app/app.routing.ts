@@ -5,6 +5,7 @@ import { AboutComponent }   from './about/about.component';
 import { CoffeeComponent }   from './coffee/coffee.component';
 import { ContactComponent } from './contact/contact.component';
 import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'coffees/:id',
     component: CoffeeDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

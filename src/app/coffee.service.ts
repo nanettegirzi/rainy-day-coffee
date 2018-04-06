@@ -21,4 +21,19 @@ export class CoffeeService {
   getCoffeeById(coffeeId: string) {
     return this.database.object('coffees/' + coffeeId);
   }
+
+  updateCoffee(localUpdatedCoffee) {
+    var coffeeEntryInFirebase = this.getCoffeeById(localUpdatedCoffee.$key);
+    coffeeEntryInFirebase.update({name: localUpdatedCoffee.name,
+                                  price: localUpdatedCoffee.price,
+                                  region: localUpdatedCoffee.region,
+                                  producer: localUpdatedCoffee.producer,
+                                  cultivar: localUpdatedCoffee.cultivar,
+                                  processing: localUpdatedCoffee.processing,
+                                  elevation: localUpdatedCoffee.elevation,
+                                  taste: localUpdatedCoffee.taste,
+                                  description: localUpdatedCoffee.description
+    });
+
+}
 }

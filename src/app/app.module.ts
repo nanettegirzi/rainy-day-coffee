@@ -12,6 +12,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditCoffeeComponent } from './edit-coffee/edit-coffee.component';
+import { FormsModule } from '@angular/forms';
 
 
 export const firebaseConfig = {
@@ -35,7 +36,7 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    // FormsModule,
+    FormsModule,
     // HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),

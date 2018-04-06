@@ -1,4 +1,5 @@
-<!-- <h4>Edit Current Coffees</h4>
+<hr>
+<h4>Edit Album</h4>
 
 <label>New Coffee Name:</label>
 <input [(ngModel)]="selectedCoffee.name">
@@ -8,7 +9,7 @@
 <input [(ngModel)]="selectedCoffee.price">
 <br>
 
-<label>New Coffee Region:</label>
+<label>New Coffee newRegion:</label>
 <input [(ngModel)]="selectedCoffee.region">
 <br>
 
@@ -33,4 +34,6 @@
 <br>
 
 <label>New Coffee Description:</label>
-<input [(ngModel)]="selectedCoffee.description"> -->
+<input [(ngModel)]="selectedCoffee.description">
+
+<button type="button" class="btn btn-info" (click)="beginUpdatingCoffee(selectedCoffee)">Update</button>

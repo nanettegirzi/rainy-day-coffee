@@ -34,6 +34,10 @@ export class CoffeeService {
                                   taste: localUpdatedCoffee.taste,
                                   description: localUpdatedCoffee.description
     });
+}
 
+deleteCoffee(localCoffeeToDelete) {
+  var coffeeEntryInFirebase = this.getCoffeeById(localCoffeeToDelete.$key);
+  coffeeEntryInFirebase.remove();
 }
 }

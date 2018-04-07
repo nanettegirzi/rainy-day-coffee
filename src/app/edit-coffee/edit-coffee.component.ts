@@ -20,4 +20,10 @@ export class EditCoffeeComponent implements OnInit {
     this.coffeeService.updateCoffee(coffeeToUpdate);
   }
 
+  beginDeletingCoffee(coffeeToDelete) {
+    if(confirm("Are you sure you want to delete this item from the inventory")) {
+      this.coffeeService.deleteCoffee(coffeeToDelete);
+    }
+  }
+
 }

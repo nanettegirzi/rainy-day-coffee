@@ -21,6 +21,7 @@ Website for a coffee roasting store.
 
 ## Features to Come
 
+* Coffee breadcrumb link to work
 * Log in capabilities to admin page
 * More styling for About us and Visit pages
 

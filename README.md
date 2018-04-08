@@ -1,6 +1,6 @@
 # RainyDayCoffee
 
-####Epicodus Spring 2018
+#### Epicodus Spring 2018
 
 #### By **Nanette Girzi**
 
@@ -8,7 +8,7 @@
 
 Website for a coffee roasting store.
 
-[See live website here.][]
+[See live website here.](https://rainy-day-coffee.firebaseapp.com/)
 
 ## Features
 
